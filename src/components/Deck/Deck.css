@@ -1,0 +1,60 @@
+.deck {
+  width: 100vw;
+  height: 100%;
+  text-align: center;
+  scroll-snap-align: center;
+  flex: none;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+}
+
+.deck__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.deck__name {
+  position: absolute;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+@media (orientation: landscape) {
+  .deck__name {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    writing-mode: vertical-lr;
+  }
+}
+
+@media (orientation: portrait) {
+  .deck__name {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}
+
+.deck__name[data-hidden="true"] {
+  display: none;
+}
+
+.deck__backdrop {
+  inset: 0;
+  z-index: 0;
+  background: rgb(0, 0, 0);
+  opacity: 0;
+  cursor: default;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.deck:has(.card[data-active="true"]) .deck__backdrop {
+  position: fixed;
+  opacity: 0.05;
+  z-index: 100;
+}
