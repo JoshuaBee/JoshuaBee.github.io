@@ -1,17 +1,7 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
-		<link rel="preconnect" href="https://font.gstatic.com/" crossorigin>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167099010-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'UA-167099010-1');
-		</script>
+  <head>
+    <link rel="preload" as="image" href="/images/cards/home/joshua-bee-electric.webp" fetchpriority="high" />
 
 		<title>Joshua Bee - Web Developer</title>
 		<meta charset="utf-8" />
@@ -31,16 +21,16 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="Joshua Bee - Web Developer" />
 		<meta property="og:description" content="Personal website for Joshua Bee, a web developer based in Loughborough, UK" />
-		<meta property="og:image" content="images/home/media-1500.jpg" />
-		<meta property="og:image:type" content="image/jpeg" />
-		<meta property="og:image:width" content="1500" />
-		<meta property="og:image:height" content="855" />
+		<meta property="og:image" content="/public/images/cards/home/joshua-bee-electric.png" />
+		<meta property="og:image:type" content="image/png" />
+		<meta property="og:image:width" content="660" />
+		<meta property="og:image:height" content="924" />
 
 		<!-- Twitter -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="Joshua Bee - Web Developer" />
 		<meta name="twitter:description" content="Personal website for Joshua Bee, a web developer based in Loughborough, UK" />
-		<meta name="twitter:image" content="images/home/media-1500.jpg" />
+		<meta name="twitter:image" content="/public/images/cards/home/joshua-bee-electric.png" />
 		<meta name="twitter:image:alt" content="Joshua Bee" />
 		
 		<!-- Icons -->
@@ -48,701 +38,52 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 		<link rel="manifest" href="/manifest.webmanifest">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6200EE">
-		<meta name="msapplication-TileColor" content="#6200EE">
+		<meta name="msapplication-TileColor" content="#a300c8">
 		
 		<link rel="canonical" href="https://joshuabee.dev/" />
 
 		<!-- Progressive Web App -->
-		<meta name="theme-color" content="#6200EE" />
+		<meta name="theme-color" content="#a300c8" />
 
 		<script type="application/ld+json">
 			{
 				"@context": "http://schema.org/",
 				"@type": "Person",
 				"alumniOf":[
-                	{
-                    	"@type":"Organization",
-                		"name":"The University of Hull",
-                    	"url":"https://www.hull.ac.uk/"
+          {
+            "@type":"Organization",
+            "name":"The University of Hull",
+            "url":"https://www.hull.ac.uk/"
 					},
-                    {
-                    	"@type":"Organization",
-                		"name":"The University of Nottingham",
-                    	"url":"https://www.nottingham.ac.uk/"
+          {
+            "@type":"Organization",
+            "name":"The University of Nottingham",
+            "url":"https://www.nottingham.ac.uk/"
 					}
-                ],
+        ],
 				"givenName":"Joshua",
 				"familyName":"Bee",
 				"jobTitle":"Web Developer",
-                "name":"Joshua Bee",
-                "nationality":{
-                	"@type":"Country",
-                	"name":"United Kingdom"
-                },
-				"sameAs":[
-					"https://www.linkedin.com/in/joshua-bee/"
-				],
-                "worksFor":{
-                	"@type":"Organization",
-                	"name":"Strawberry",
-                	"url":"https://strawberry.co.uk/"
-                },
+        "name":"Joshua Bee",
+        "nationality":{
+          "@type":"Country",
+          "name":"United Kingdom"
+        },
+        "sameAs":[
+          "https://www.linkedin.com/in/joshua-bee/"
+        ],
+        "worksFor":{
+          "@type":"Organization",
+          "name":"Shopify",
+          "url":"https://shopify.com/"
+        },
 				"url":"https://joshuabee.dev/"
 			}
 		</script>
+  </head>
 
-		<!-- Settings -->
-		<link href="styles/1-settings/color.css" rel="stylesheet" />
-		<link href="styles/1-settings/font.css" rel="stylesheet" />
-
-		<!-- Generic -->
-		<link href="styles/3-generic/reset.css" rel="stylesheet" />
-
-		<!-- Elements -->
-		<link href="styles/4-elements/body.css" rel="stylesheet" />
-		<link href="styles/4-elements/html.css" rel="stylesheet" />
-		<link href="styles/4-elements/main.css" rel="stylesheet" />
-		
-		<!-- Components -->
-		<link href="styles/6-components/button.css" rel="stylesheet" />
-		<link href="styles/6-components/card.css" rel="stylesheet" />
-		<link href="styles/6-components/header.css" rel="stylesheet" />
-		<link href="styles/6-components/input-group.css" rel="stylesheet" />
-		<link href="styles/6-components/modal.css" rel="stylesheet" />
-		<link href="styles/6-components/navigation.css" rel="stylesheet" />
-		<link href="styles/6-components/overlay.css" rel="stylesheet" />
-		<link href="styles/6-components/skip-link.css" rel="stylesheet" />
-		<link href="styles/6-components/snackbar.css" rel="stylesheet" />
-		<link href="styles/6-components/sheet.css" rel="stylesheet" />
-		
-		<!-- Utilities -->
-		<link href="styles/7-utilities/visually-hidden.css" rel="stylesheet" />
-	</head>
-
-	<body>
-		<a href='#home' class='skip-link'>
-			Skip to Content
-		</a>
-		
-		<header class="header">
-			<a href="#home" class="header__branding" data-scroll-to="home">
-				<picture class="header__logo">
-					<source srcset="images/logos/logo-192.svg" type="image/svg+xml">
-					<img src="images/logos/logo-192.png" height="192" width="192" alt="Home" loading="lazy" />
-				</picture>
-				<h1 class="header__title">Joshua Bee</h1>
-			</a>
-
-			<button aria-label="Navigation" data-drawer-toggle="navigation" class="header__navigation-button">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-			</button>
-			
-			<nav id="navigation" class="navigation" data-drawer="navigation" data-visible="false">
-				<div class="navigation__items">
-					<div class="navigation__item">
-						<a href="#projects" class="navigation__link" data-scroll-to="projects">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-							<span class="navigation__label">Projects</span>
-							<div class="navigation__indicator"></div>
-						</a>
-					</div>
-					<div class="navigation__item">
-						<a href="#education" class="navigation__link" data-scroll-to="education">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
-							<span class="navigation__label">Education</span>
-							<div class="navigation__indicator"></div>
-						</a>
-					</div>
-					<div class="navigation__item">
-						<a href="#experience" class="navigation__link" data-scroll-to="experience">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
-							<span class="navigation__label">Experience</span>
-							<div class="navigation__indicator"></div>
-						</a>
-					</div>
-					<div class="navigation__item">
-						<a href="#hobbies" class="navigation__link" data-scroll-to="hobbies">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
-							<span class="navigation__label">Hobbies</span>
-							<div class="navigation__indicator"></div>
-						</a>
-					</div>
-					<div class="navigation__item">
-						<button class="navigation__link" data-modal-open="settings">
-							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.09-.16-.26-.25-.44-.25-.06 0-.12.01-.17.03l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.06-.02-.12-.03-.18-.03-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.09.16.26.25.44.25.06 0 .12-.01.17-.03l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
-							<span class="navigation__label">Settings</span>
-						</button>
-					</div>
-				</div>
-			</nav>
-		</header>
-
-		<main>
-
-			<section id="home" class="sheet">
-
-				<div class="cards">
-					<div class="card">
-						<header class="card__header">
-							<img src="images/home/thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Joshua Bee Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Joshua Bee</h3>
-								<span class="card__header-subtitle">Web Developer</span>
-							</div>
-						</header>
-
-						<picture class="card__media">
-							<source srcset="images/home/media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-							<source srcset="images/home/media-1500.webp" type="image/webp">
-							<img src="images/home/media-1500.jpg" height="855" width="1500" alt="Joshua Bee" fetchpriority="high" />
-						</picture>
-
-						<footer class="card__footer">
-							<div class="buttons">
-								<a href="mailto:hello@joshuabee.dev" class="button button-icon-text">
-									<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail icon</title><path d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"/></svg>
-									<span class="button__text">Email</span>
-								</a>
-								<a href="https://www.linkedin.com/in/joshua-bee/" target="_blank" rel="noopener noreferrer" class="button button-icon-text">
-									<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-									<span class="button__text">LinkedIn</span>
-								</a>
-								<a href="https://github.com/JoshuaBee/" target="_blank" rel="noopener noreferrer" class="button button-icon-text">
-									<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-									<span class="button__text">GitHub</span>
-								</a>
-							</div>
-						</footer>
-					</div>
-				</div>
-
-			</section>
-
-			<section id="projects" class="sheet">
-
-				<h2 class="sheet__title">Projects</h2>
-
-				<div class="cards">
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/projects/pixelizer-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Pixelizer Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Pixelizer</h3>
-								<span class="card__header-subtitle">📷 Take a photo and pixelize it!</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://pixelizer.joshuabee.dev/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/projects/pixelizer-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/projects/pixelizer-media-1500.webp" height="855" width="1500" alt="Pixelizer Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/projects/colour-palette-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Colour Palette Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Colour Palette</h3>
-								<span class="card__header-subtitle">🎨 OKLCH Colour Palette Generator</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://palette.joshuabee.dev/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/projects/colour-palette-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/projects/colour-palette-media-1500.webp" height="855" width="1500" alt="Colour Palette Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/projects/pokemon-type-elo-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Pokémon Type Elo Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Pokémon Type Elo</h3>
-								<span class="card__header-subtitle">🔥🌴💦 Elo rating for Pokémon types</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://pokemon.joshuabee.dev/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/projects/pokemon-type-elo-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/projects/pokemon-type-elo-media-1500.webp" height="855" width="1500" alt="Pokémon Type Elo Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/projects/colour-encoder-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Colour Encoder Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Colour Encoder</h3>
-								<span class="card__header-subtitle">🔒 Program that takes text and encodes it as colours</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://encoder.joshuabee.dev/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/projects/colour-encoder-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/projects/colour-encoder-media-1500.webp" height="855" width="1500" alt="Colour Encoder Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/projects/project-euler-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Project Euler Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Project Euler</h3>
-								<span class="card__header-subtitle">📓 Collection of Project Euler puzzles</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://euler.joshuabee.dev/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/projects/project-euler-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/projects/project-euler-media-1500.webp" height="855" width="1500" alt="Project Euler Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/projects/translate-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Translate Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Translate</h3>
-								<span class="card__header-subtitle">📝 Translates text into visually similar non-English characters</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://translate.joshuabee.dev/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/projects/translate-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/projects/translate-media-1500.webp" height="855" width="1500" alt="Translate Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/projects/pong-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Pong Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Pong</h3>
-								<span class="card__header-subtitle">🎮 My own version of the classic arcade game Pong</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://pong.joshuabee.dev/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/projects/pong-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/projects/pong-media-1500.webp" height="855" width="1500" alt="Pong Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/projects/breakout-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Breakout Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Breakout</h3>
-								<span class="card__header-subtitle">🎮 My own version of the classic arcade game Breakout</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://breakout.joshuabee.dev/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/projects/breakout-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/projects/breakout-media-1500.webp" height="855" width="1500" alt="Breakout Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/projects/blackjack-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Blackjack Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Blackjack</h3>
-								<span class="card__header-subtitle">♠️♥️♣️♦️ My own version of the casino game Blackjack</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://blackjack.joshuabee.dev/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/projects/blackjack-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/projects/blackjack-media-1500.webp" height="855" width="1500" alt="Blackjack Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/projects/photos-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Photos Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Photos</h3>
-								<span class="card__header-subtitle">📷 Photo album of the 🐝 family</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://photos.joshuabee.dev/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/projects/photos-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/projects/photos-media-1500.webp" height="855" width="1500" alt="Photos Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/projects/fake-name-generator-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Fake Name Generator Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Fake Name Generator</h3>
-								<span class="card__header-subtitle">📛 Enter a name, returns an altered version</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://fake.joshuabee.dev/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/projects/fake-name-generator-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/projects/fake-name-generator-media-1500.webp" height="855" width="1500" alt="Fake Name Generator Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="education" class="sheet">
-
-				<h2 class="sheet__title">Education</h2>
-
-				<div class="cards">
-					<div class="card">
-						<header class="card__header">
-							<img src="images/education/hull-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Hull Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">University of Hull</h3>
-								<span class="card__header-subtitle">Master of Research in Computer Science</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<picture class="card__media">
-								<source srcset="images/education/hull-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-								<img src="images/education/hull-media-1500.webp" height="855" width="1500" alt="Hull Media" loading="lazy" />
-							</picture>
-						</div>
-						<footer class="card__footer">
-							<p>Worked on developing novel techniques to improve the efficiency of Generative Adversarial Networks, a framework of Artificial Neural Networks.</p>
-						</footer>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/education/nottingham-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Nottingham Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">University of Nottingham</h3>
-								<span class="card__header-subtitle">First Class Bachelor of Science with Honours in Mathematics</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<picture class="card__media">
-								<source srcset="images/education/nottingham-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-								<img src="images/education/nottingham-media-1500.webp" height="855" width="1500" alt="Nottingham Media" loading="lazy" />
-							</picture>
-						</div>
-						<footer class="card__footer">
-							<p>Modules undertaken include:</p>
-							<ul>
-								<li>Applied Mathematics (88)</li>
-								<li>Calculus (88)</li>
-								<li>Differential Equations (70)</li>
-								<li>Linear Mathematics (86)</li>
-								<li>Modelling with Differential Equations (93)</li>
-								<li>Topics in Scientific Computation (79)</li>
-								<li>Vector Calculus (84)</li>
-							</ul>
-						</footer>
-					</div>
-				</div>
-			</section>
-
-			<section id="experience" class="sheet">
-
-				<h2 class="sheet__title">Experience</h2>
-				
-				<div class="cards">
-					<div class="card">
-						<header class="card__header">
-							<img src="images/experience/shopify-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Shopify Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Shopify</h3>
-								<span class="card__header-subtitle">Senior Developer</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://shopify.com/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/experience/shopify-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/experience/shopify-media-1500.webp" height="855" width="1500" alt="Shopify Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-						<footer class="card__footer">
-							<p>Shopify is an e-commerce company empowering entrepeneurs to grow their businesses. As a senior developer I am responsible for improving the shipping processes.</p>
-							<br />
-							<ul>
-								<li>Implemented a project in the admin to improve onboarding new merchants to the available delivery methods.</li>
-							</ul>
-						</footer>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/experience/strawberry-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Strawberry Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Strawberry</h3>
-								<span class="card__header-subtitle">Web Developer</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://strawberry.co.uk/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/experience/strawberry-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/experience/strawberry-media-1500.webp" height="855" width="1500" alt="Strawberry Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-						<footer class="card__footer">
-							<p>Strawberry is a creative marketing agency working with the highest tier of Shopify and BigCommerce clients. As a web developer I was responsible for improving websites through upgraded functionality, performance enhancements and bug fixes.</p>
-							<br />
-							<ul>
-								<li>Lead the development of several stores, including the Tottenham Hotspur BigCommerce store and the Scholl Shopify store.</li>
-								<li>Audited, planned and executed website performance upgrades to satisfy Google's Core Web Vitals metrics, enhancing user experiences and boosting SEO.</li>
-								<li>Rectified development processes to increase productivity and help the onboarding of new developers.</li>
-							</ul>
-						</footer>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/experience/herd-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Herd Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Herd</h3>
-								<span class="card__header-subtitle">Senior Software Developer</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://herd.io/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/experience/herd-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/experience/herd-media-1500.webp" height="855" width="1500" alt="Herd Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-						<footer class="card__footer">
-							<p>Herd is a digital agency specialising in search marketing and ecommerce, with a specific interest in Shopify. As a senior software developer I was responsible for creating and maintaining Shopify Apps, RESTful APIs and services to solve many interesting problems.</p>
-							<br />
-							<ul>
-								<li>Built agile development processes to allow the company to grow with the correct culture. Used Azure DevOps to implement continuous deployment and integration to automate build, test and release projects.</li>
-								<li>Developed several Shopify Apps, including an app to allow customers to checkout using a new finance provider, circumventing the conventional checkout process.</li>
-							</ul>
-						</footer>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/experience/symphony-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Symphony Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Symphony RetailAI</h3>
-								<span class="card__header-subtitle">Software Developer</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<a href="https://www.symphonyretailai.com/" target="_blank" rel="noopener noreferrer">
-								<picture class="card__media">
-									<source srcset="images/experience/symphony-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-									<img src="images/experience/symphony-media-1500.webp" height="855" width="1500" alt="Symphony Media" loading="lazy" />
-								</picture>
-							</a>
-						</div>
-						<footer class="card__footer">
-							<p>Symphony RetailAI is a fast moving consumer goods business with a focus on technology. As a developer I was responsible for creating programs to help retailers and manufacturers increase their revenue through data driven analysis.</p>
-							<br />
-							<ul>
-								<li>Project leader for a program that analyses nationwide product distributions, and is currently being used by 2 international clients. Improved the usability of the application and implemented solutions to meet customer needs.</li>
-								<li>Implemented database structuring and optimisation techniques to make the applications run as quickly and faultlessly as possible.</li>
-							</ul>
-
-							</p>
-						</footer>
-					</div>
-				</div>
-			</section>
-
-			<section id="hobbies" class="sheet">
-
-				<h2 class="sheet__title">Hobbies</h2>
-
-				<div class="cards">
-					<div class="card">
-						<header class="card__header">
-							<img src="images/hobbies/sport-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Sport Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Sports</h3>
-								<span class="card__header-subtitle">Regularly play football, squash, badminton and table tennis.</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<picture class="card__media">
-								<source srcset="images/hobbies/sport-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-								<img src="images/hobbies/sport-media-1500.webp" height="855" width="1500" alt="Sport Media" loading="lazy" />
-							</picture>
-						</div>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/hobbies/language-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Language Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Languages</h3>
-								<span class="card__header-subtitle">Currently learning Korean.</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<picture class="card__media">
-								<source srcset="images/hobbies/language-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-								<img src="images/hobbies/language-media-1500.webp" height="855" width="1500" alt="Language Media" loading="lazy" />
-							</picture>
-						</div>
-					</div>
-
-					<div class="card">
-						<header class="card__header">
-							<img src="images/hobbies/music-thumbnail-80.webp" class="card__thumbnail" height="80" width="80" alt="Music Thumbnail" loading="lazy" />
-							<div class="card__header-text">
-								<h3 class="card__header-title">Music</h3>
-								<span class="card__header-subtitle">Play the guitar, bass guitar and drums.</span>
-							</div>
-						</header>
-						<div class="card__content">
-							<picture class="card__media">
-								<source srcset="images/hobbies/music-media-1000.webp" type="image/webp" media="(max-width: 2000px)">
-								<img src="images/hobbies/music-media-1500.webp" height="855" width="1500" alt="Music Media" loading="lazy" />
-							</picture>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<div id="update-snackbar" class="snackbar" aria-hidden="true" data-position="top">
-				<span class="snackbar__text">Update app</span>
-				<div class="snackbar__actions">
-					<div class="snackbar__action button">
-						<span class="button__text">Update</span>
-					</div>
-					<div class="snackbar__close button">
-						<p class="visually-hidden">Close</p>
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-					</div>
-				</div>
-			</div>
-			
-			<div id="install-snackbar" class="snackbar" aria-hidden="true" data-position="bottom">
-				<span class="snackbar__text">Install App</span>
-				<div class="snackbar__actions">
-					<div class="snackbar__action button">
-						<span class="button__text">Install</span>
-					</div>
-					<div class="snackbar__close button">
-						<p class="visually-hidden">Close</p>
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-					</div>
-				</div>
-			</div>
-
-		</main>
-
-		<div id="overlay" class="overlay"></div>
-
-		<div id="settings" class="modal" role="dialog" aria-labelledby="modal-title">
-			<div class="modal__header">
-				<h2 id="modal-title" class="modal__title header__title">
-					Settings
-				</h2>
-
-				<button class="modal__close">
-					<p class="visually-hidden">Close</p>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-				</button>
-			</div>
-
-			<div class="modal__content">
-				<div class="input-group">
-					<label for="theme-select" class="input-group__label">Theme:</label>
-					<select name="theme" id="theme-select" data-setting="theme">
-						<option value="system">System Preference</option>
-						<option value="light">Light</option>
-						<option value="dark">Dark</option>
-					</select>
-				</div>
-
-				<div class="input-group">
-					<label for="reduce-motion-select" class="input-group__label">Reduce Motion:</label>
-					<select name="reduce-motion" id="reduce-motion-select" data-setting="reduceMotion">
-						<option value="system">System Preference</option>
-						<option value="yes">Yes</option>
-						<option value="no">No</option>
-					</select>
-				</div>
-			</div>
-
-			<div class="modal__footer">
-				<button class="modal__accept button">
-					<span class="">Save</span>
-				</button>
-			</div>
-		</div>
-
-		<!-- Main Javascript -->
-		<script src="scripts/main.js"></script>
-		<script>
-			if ('serviceWorker' in navigator) {
-				navigator.serviceWorker
-					.register('/service-worker.js')
-					.then(registration => {
-						console.log('Service worker registration successful, scope is:', registration.scope);
-
-						registration.onupdatefound = () => {
-							const installingWorker = registration.installing;
-							if (installingWorker == null) {
-								return;
-							}
-							installingWorker.onstatechange = () => {
-								if (installingWorker.state === 'installed') {
-									if (navigator.serviceWorker.controller) {
-										$updateSnackbar.ariaHidden = false;
-									};
-								}
-							};
-						};
-					})
-					.catch(function(error) {
-						console.log('Service worker registration failed, error:', error);
-					});
-			}
-		</script>
-	</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
