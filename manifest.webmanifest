@@ -5,9 +5,9 @@
   "id": "/",
   "icons": [
     {
-      "src": "public/images/icons/joshua-bee-electric-660.png",
-      "type": "image/png",
-      "sizes": "660x924",
+      "src": "public/images/cards/home/joshua-bee-electric.webp",
+      "type": "image/webp",
+      "sizes": "660x921",
       "purpose": "any maskable"
     }
   ],

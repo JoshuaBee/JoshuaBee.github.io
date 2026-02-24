@@ -4,6 +4,7 @@ import { clamp, round } from "../../../../utils/math";
 import type { CardData } from "../../../../types";
 
 import "./Card.css";
+import cardBack from "../../../../assets/images/cards/card-back.webp";
 
 const MAX_TOTAL_ANGLE = 60;
 
@@ -168,7 +169,7 @@ export function Card({
           >
             <img
               className="card__back"
-              src="/images/cards/card-back.webp"
+              src={cardBack}
               alt=""
               loading="lazy"
               fetchPriority="low"
