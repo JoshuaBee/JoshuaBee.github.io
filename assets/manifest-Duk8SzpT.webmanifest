@@ -1,0 +1,27 @@
+{
+	"background_color": "#a300c8",
+  "description": "Personal website for Joshua Bee",
+  "display": "standalone",
+  "id": "/",
+  "icons": [
+    {
+      "src": "public/images/cards/home/joshua-bee-electric.webp",
+      "type": "image/webp",
+      "sizes": "660x921",
+      "purpose": "any maskable"
+    }
+  ],
+  "name": "Joshua Bee",
+  "screenshots" : [
+    {
+      "src": "images/screenshots/screenshot1.webp",
+      "sizes": "5120x2156",
+      "type": "image/webp",
+      "platform": "wide",
+      "label": "Homescreen of Joshua Bee"
+    }
+  ],
+  "short_name": "Joshua Bee",
+  "start_url": "/",
+  "theme_color": "#a300c8"
+}
